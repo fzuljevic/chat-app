@@ -56,15 +56,6 @@ class App extends React.Component {
     return "#" + Math.floor(Math.random() * 0xffffff).toString(16);
   };
 
-  onSendMessage = (message) => {
-    const messages = this.state.messages;
-    messages.push({
-      text: message,
-      member: this.state.member,
-    });
-    this.setState({ messages: messages });
-  };
-
   render() {
     return (
       <div className="App">
